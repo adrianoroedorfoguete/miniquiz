@@ -37,7 +37,7 @@
                                     <segue destination="ogk-3H-FCW" kind="unwind" unwindAction="returnmainViewWithSegue:" id="Ztd-CK-Kmr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qual é a cor do cavalo branco do Bruno?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOE-Vw-wgl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qual é a cor do cavalo branco do Pedro?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOE-Vw-wgl">
                                 <rect key="frame" x="18" y="100" width="338" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
@@ -52,6 +52,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button 4"/>
+                                <connections>
+                                    <action selector="butoes:" destination="dA3-FA-UOd" eventType="touchUpInside" id="fgn-6G-pY1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVA-X7-yZf">
                                 <rect key="frame" x="158" y="451" width="80" height="31"/>
@@ -60,24 +63,30 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button 4"/>
+                                <connections>
+                                    <action selector="butoes:" destination="dA3-FA-UOd" eventType="touchUpInside" id="Pmg-dR-J3M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptX-q5-8mD">
-                                <rect key="frame" x="158" y="371" width="80" height="31"/>
+                                <rect key="frame" x="157" y="394" width="81" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button 4"/>
+                                <buttonConfiguration key="configuration" style="plain" title="2"/>
+                                <connections>
+                                    <action selector="butoes:" destination="dA3-FA-UOd" eventType="touchUpInside" id="lmU-ob-Hdr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma0-kZ-ox8">
-                                <rect key="frame" x="157" y="325" width="80" height="31"/>
+                                <rect key="frame" x="157" y="346" width="80" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button 4"/>
+                                <buttonConfiguration key="configuration" style="plain" title="1"/>
                                 <connections>
-                                    <action selector="butoes:" destination="dA3-FA-UOd" eventType="touchUpInside" id="0XU-ez-zuA"/>
+                                    <action selector="butoes:" destination="dA3-FA-UOd" eventType="touchUpInside" id="XD2-HX-tWr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,11 +97,11 @@
                     <navigationItem key="navigationItem" id="uGs-cK-pU6"/>
                     <connections>
                         <outlet property="question" destination="fOE-Vw-wgl" id="JSF-5T-ZVw"/>
-                        <outletCollection property="opcoes" destination="ptX-q5-8mD" collectionClass="NSMutableArray" id="GVT-ac-JwG"/>
-                        <outletCollection property="opcoes" destination="UVA-X7-yZf" collectionClass="NSMutableArray" id="8EX-Eb-ysq"/>
-                        <outletCollection property="opcoes" destination="B1R-Mm-QBe" collectionClass="NSMutableArray" id="NNu-rd-R6l"/>
-                        <outletCollection property="opcoes" destination="Ma0-kZ-ox8" collectionClass="NSMutableArray" id="lde-AL-E99"/>
-                        <segue destination="sK0-Pf-X9l" kind="show" identifier="Segueresultado" id="GWh-xa-SBB"/>
+                        <outletCollection property="opcoes" destination="Ma0-kZ-ox8" collectionClass="NSMutableArray" id="HsS-dn-yt9"/>
+                        <outletCollection property="opcoes" destination="ptX-q5-8mD" collectionClass="NSMutableArray" id="AqX-cq-C3j"/>
+                        <outletCollection property="opcoes" destination="UVA-X7-yZf" collectionClass="NSMutableArray" id="JO3-G4-N9Q"/>
+                        <outletCollection property="opcoes" destination="B1R-Mm-QBe" collectionClass="NSMutableArray" id="Eip-73-AOJ"/>
+                        <segue destination="sK0-Pf-X9l" kind="show" identifier="SegueResultado" id="GWh-xa-SBB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1UM-U8-rnX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
